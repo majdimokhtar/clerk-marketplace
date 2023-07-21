@@ -1,4 +1,5 @@
 import { SignOutButton, UserButton } from "@clerk/nextjs";
+import Link from "next/link";
 import React from "react";
 
 export default function NavBar() {
@@ -49,6 +50,15 @@ export default function NavBar() {
               >
                 Home
               </a>
+            </li>
+            <li>
+              <Link
+                href="/sell-an-item"
+                className="block rounded bg-blue-700 py-2 pl-3 pr-4 text-white dark:text-white md:bg-transparent md:p-0 md:text-blue-700 md:dark:text-blue-500"
+                aria-current="page"
+              >
+                Sell An Item
+              </Link>
             </li>
             <li>
               <SignOutButton>
